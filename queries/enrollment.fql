@@ -1,0 +1,7 @@
+LET utec = DOCUMENT("https://core.utec.edu.pe", {
+   driver: "cdp",
+})
+
+LET data = SCREENSHOT(utec, {format: "png"})
+
+RETURN data
